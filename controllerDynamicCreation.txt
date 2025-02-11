@@ -1,0 +1,25 @@
+public void controllerDynamicCreation(StringBuilder sbController, DynamicPages dyna){
+        String[] query= querySplit(dyna);
+        sbController.append("package javapoint;\n"+"import org.springframework.http.ResponseEntity; \n"
+                + "import java.util.List; \n"
+                + "import org.springframework.web.blind.annotation.CrossOrigin;\n"
+                + "import org.springframework.web.blind.annotation.GetMapping; \n"
+                + "import org.springframework.web.blind.annotation.PathVariable;\n"
+                + "import org.springframework.web.blind.annotation.PostMapping;\n"
+                + "import org.springframework.web.blind.annotation.RequestBody;\n"
+                + "import org.springframework.web.blind.annotation.RequestMapping;\n"
+                + "import org.springframework.web.blind.annotation.RestController;\n"
+                + "import org.springframework.beans.factory.annotation.Autowired;\n"+ "@RestController\n"
+                + "@RequestMapping("+ "\"/"+ "\""+ ")\n" + "class "+ dyna.getPageName()+"Controller{\n"
+                + "@Autowired\n" + dyna.getPageName()+  "Impl"+ " "+ " " +dyna.getPageName()+"Impl;\n"
+                + "@PostMapping(" +"\"/" +" "+ dyna.getPageName()+ "\" + ")\n" + "@CrossOrigin\n" + "public
+                ResponseEntity<"+ dyna.getPageName() + "Entity> save" + dyna.getPageName() + "(@RequestBody " +
+                dyna.getPageName()+ "Entity "+ dyna.getPageName()+ "){\n" + "return ResponseEntity.ok("+
+                dyna.getPageName()+ "Impl.save"+ dyna.getPageName()+"("+ dyna.getPageName()+ "));\n" + "}\n"
+                +"@GetMapping(" + "\"/" + dyna.getPageName()+ "\")\n"
+                +"@CrossOrigin\n"
+                +"public List<"+ dyna.getPageName()+ "Entity> get"+ dyna.getPageName()+"(){\n"
+                +"return "+ dyna.getPageName()+ "Impl.get"+ dyna.getPageName()+"();\n}");
+                sbController.append("}\n");
+
+        }
