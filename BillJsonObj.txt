@@ -1,0 +1,9 @@
+Bill :{
+"billId" : "123",
+"LocalDateTime": "13-02-2025",
+"OrderDetails":{
+"order" "Book",
+"totalItem" :"46",
+"totalCost" :"5000",
+      }
+}

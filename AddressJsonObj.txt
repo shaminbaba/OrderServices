@@ -1,0 +1,11 @@
+Address:{
+	"addressId": "Mumbai",
+        "buildingName" : "HouseNo2",
+        "streetNo" : "4",
+        "area" : "Ghansoli",
+        "city" :"Navi mumbai",
+        "state": "Maharasthra",
+        "country" : "India",
+        "pinCode" : "400703"
+
+}
