@@ -1,0 +1,46 @@
+BillDto :{
+
+"customerName" :"Shamin",
+"LocalDateTime" :"13-02-2025 22:25",
+"totalCost": "6700",
+ Item :{
+  "itemId" :"103",
+  "itemName" :"Notebook",
+   Category :{
+     "categoryId" : "22",
+      CategoryName :{
+        "VEG" :"Burger",
+        "NON_VEG" :"Chiken Biriyani",     
+          }
+        }
+    "quantity" :"55",
+    "cost" : "6500",
+    Restaurant :{
+       "restaurantId" : "5",
+       "restaurantName" : "Aahar",        
+     
+      Address :{
+         "addressId" : "2",
+         "buildingName":"42C-Tower",
+         "streetNo" :"12",
+         "area" :"Plot No 32",
+         "city":"Navi Mumbai",
+         "state":"Maharastra",
+         "country": "India",
+         "pinCode": "400453"
+        }
+       Item :{
+        "itemId": "5",
+        "itemName" :"Sweets",
+         Category :{
+           "categoryId":"2",
+           ""
+           }
+         "quantity": "33",
+         "cost" :"6654",
+        }
+     "manager" : "SJD",
+     "mobileNumber": "7654567876",
+     "password" : "S@123"
+     }
+}
