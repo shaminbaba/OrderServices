@@ -10,6 +10,7 @@ console.log('Received state:', product);
     if (!product) {
       // Redirect if product is not passed
       navigate('/');
+      
     }
   }, [product, navigate]);
 
