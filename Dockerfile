@@ -2,7 +2,13 @@ FROM eclipse-temurin:17-jre
 
 WORKDIR /app
 
-COPY target/OrderService-aws-exe.jar app.jar
+COPY pom.xml
+
+COPY src ./src
+
+RUN mvn clean package -DskipTests
+
+COPY--from=build /app/target/*.jar app.jar
 
 EXPOSE 8080
 
