@@ -25,7 +25,11 @@ public class CustomerController {
  
 	@Autowired
 	private CustomerService CS;
-	
+
+	@GetMapping("/")
+	public String testMethod(){
+		return "testing method";
+	}
 	@PostMapping("/AddCustomer")
 	public ResponseEntity<Customer> addCustomer(@Valid @RequestBody Customer customer)throws CustomerNotFound{
 		
