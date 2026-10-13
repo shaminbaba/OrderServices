@@ -21,6 +21,7 @@ import com.orderService.service.CustomerService;
 
 
 @RestController
+@CrossOrigin(origins = "https://orderservices-5cxz.onrender.com")
 public class CustomerController {
  
 	@Autowired
