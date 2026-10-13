@@ -40,7 +40,7 @@ const PasswordPage = ({ formData, setFormData }) => {
 
     console.log(JSON.stringify(payload));
     try {
-      const res = await fetch("https://orderservices-1.onrender.com/AddCustomer", {
+      const res = await fetch("https://orderservices-1.onrender.com:8080/AddCustomer", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
