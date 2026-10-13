@@ -12,8 +12,10 @@ import com.orderService.model.LoginDto;
 import com.orderService.service.LoginService;
 
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
+@CrossOrigin(origins = "https://orderservices-5cxz.onrender.com")
 public class LoginServiceHandler {
 	
 	@Autowired
