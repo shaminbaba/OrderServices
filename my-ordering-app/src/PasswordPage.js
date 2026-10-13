@@ -15,12 +15,13 @@ const PasswordPage = ({ formData, setFormData }) => {
       alert("Passwords do not match.");
       return;
     }
+    
 
     // Format final JSON object
     const payload = {
       customerId: "",
       firstName: formData.firstName,
-      lastName: formData.lastName,
+      lastname: formData.lastName,
       age: parseInt(formData.age),
       gender: formData.gender,
       mobileNumber: formData.mobileNumber,
