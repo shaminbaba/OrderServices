@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.orderService.exception.CustomerNotFound;
 import com.orderService.model.Customer;
 import com.orderService.service.CustomerService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 
 @RestController
