@@ -28,7 +28,7 @@ useEffect(() => {
       }
 
       try {
-        const response = await fetch('http://localhost:8080/items'); // Replace with your actual API endpoint
+        const response = await fetch('https://orderservices-1.onrender.com/items'); // Replace with your actual API endpoint
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
